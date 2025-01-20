@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0;
+    animation: slideIn 1s forwards;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #282c34;
+    background-color: #dfb715;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.explore-button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

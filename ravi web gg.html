@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web design simpel ravi</title>
+    <link rel="stylesheet" href="ravi gg.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="perkenalan ravi.html">About</a></li>
+                <li><a href="https://www.whatsapp.com">Konsultasi</a></li>
+                <li><a href="https://www.instagram.com/lilrappp_/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Selamat datang di web showcase gua</h1>
+        <p>Disini gua akan menunjukkan karya gua.</p>
+        <a href="list projek ravi.html" class="btn">Project Saya</a>
+    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Gua adalah anak umur 16 tahun yang kerjaan nya rebahan.</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>jika ingin melihat projek saya,bisa klik tombol diatas.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>INSTA = LILRAPP.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025</p>
+    </footer>
+    <script>
+        // efek semut
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
